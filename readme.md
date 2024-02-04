@@ -9,6 +9,10 @@ cargo watch -q -c -w src/  -w .cargo/ -x "run"
 # 启动example Terminal2
 cargo watch -q -c -w exmaples/ -x "run --example dev"
 ```
+上传文件,我们采用post方法回传，这里测试时可以用如下命令进行
+```shell
+curl -F "file=@/path/to/Downloads/掌上生活_9.1.3_Apkpure.apk;filename=掌上生活_9.1.3_Apkpure.apk" http://localhost:8900/upload
+```
 
 
 ## 参考资料
