@@ -1,0 +1,7 @@
+[env]
+# 设置环境变量给 tracing 使用 这里的webserver=level实际是根据我们项目名称来的，因为tracing-subscriber是根据当前项目名称
+# 来判断设置的日志级别，设置这个文件技能看到对应的日志，方便在开发阶段开到日志
+RUST_LOG="webserver=debug"
+
+# 设置我们要加载的 web 目录 --存放react生成的结果
+SERVICE_WEB_UI="web-folder/"
